@@ -5,7 +5,7 @@ from fastapi import FastAPI
 app = FastAPI(title="电影栏目片段授权簿")
 
 def database_path() -> str:
-    return os.getenv("FILM_DB_PATH", "film.db")
+    return os.getenv("REHEARSAL_PLAN_DB_PATH", "rehearsal-plan.db")
 
 @app.get("/health")
 def health():
